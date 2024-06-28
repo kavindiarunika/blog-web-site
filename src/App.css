@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body {
+    font-family: "Poppins", sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  h1,
+  h2 {
+    font-family: "Playfair Display", serif;
   }
+  .row {
+    width: 50%;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  span {
+    color: crimson;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin: 20px 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .top {
+    margin-top: 80px;
+  }
+
+
+
+.home{
+    display: flex;
 }
+.left-content,.right-content{
+    width:50%;
+
+}
+.logo{
+    width: 70px;
+    height:70px;
+    color:#000;
+    background-color: #fff;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home-img img{
+    position: absolute;
+    left:-30%;
+    top: -4%;
+    height: 110vh !important;
+    z-index: -1;
+
+}
+
+.content{
+    padding:30px;
+}
+.left-content{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    color:white;
+    overflow: hidden;
+}
+
+.logo h1{
+    font-size: 40px;
+    text-align: center;
+
+}
+.left-content .text {
+    width: 45%;
+    margin-top: 15%;
+    font-size:24px;
+  }
+  .left-content .text p {
+    width: 45%;
+    margin-top: 15%;
+    font-size:16px;
+  }
+  .left-content .text span {
+    color: rgb(184, 39, 39);
+    font-size: 16px;
+
+    
+  }
+  .left-content .text2 {
+    float:right;
+    text-align: right;
+    width: 45%;
+    margin-top: 0;
+    font-size:24px;
+  }
+  .left-content .text2 p {
+    text-align: right;
+    
+    margin-top: 10%;
+    font-size:16px;
+  }
+  .left-content .text2 span {
+    color: rgb(184, 39, 39);
+    font-size: 16px;
+  text-align: right;
+    
+  }
+  
+  /*__________right contant_________________*/
+
+  .right-content{
+    padding:40px;
+    color:#000;
+    right:0;
+    position: absolute;
+    
+  }
